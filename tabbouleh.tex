@@ -1,0 +1,29 @@
+\documentclass[a4paper]{recipe}
+\usepackage[T1]{fontenc}
+\usepackage[dutch]{babel}
+\usepackage{bookman}
+
+\newcommand{\bsi}[2]{%
+  \fontencoding{T1}\fontfamily{pbs}\fontseries{xl}\fontshape{n}%
+  \fontsize{#1}{#2}\selectfont}
+
+\renewcommand{\inghead}{\textbf{Ingredienten (per 2 personen)}:\ }
+\renewcommand{\rechead}{\centering\bsi{24pt}{30pt}}
+
+\makeatletter
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
+\makeatother
+
+\setlength\parindent{0pt}
+\setlength\parskip{2ex plus 0.5ex}
+
+\begin{document}
+\recipe{Tabbouleh}
+\ingred{spaghetti, 400 gr.;
+  pancetta coppata, 300 gr.;
+  4 rossi d'uovo;
+  panna fresca, 200 gr.;
+  pepe, burro, parmigiano, pecorino.}
+
+
+\end{document}
